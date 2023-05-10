@@ -2,6 +2,8 @@ import "./HeroSec.scss";
 import Lines from "../../../medias/lines.svg"
 import Logo from "../../../medias/logo.svg"
 import Vector from "../../../medias/Vector.svg"
+import HeroPerson from "../../../medias/heroPerson.svg"
+import HeroiPhone from "../../../medias/heroiPhone.svg"
 
 
 
@@ -19,7 +21,7 @@ const HeroSec = (props) => {
                     <div className="nav__ser_pri">
                         <div className="services"> <div className="text">Services</div>
                             <img className="icon" src={Vector}></img></div>
-                            <div className="pricing">Pricing</div>
+                        <div className="pricing">Pricing</div>
                     </div>
                     <div className="nav__log_sign">
                         <div className="log">Log in</div>
@@ -35,8 +37,10 @@ const HeroSec = (props) => {
                             <div className="submit">Submit</div>
                         </div>
                     </div>
-                    <div className="right"></div>
-
+                    <div className="right">
+                        <div className="person"><img src={HeroPerson}></img></div>
+                        <div className="Phone"><img src={HeroiPhone}></img></div>
+                    </div>
                 </div>
             </div>
 
