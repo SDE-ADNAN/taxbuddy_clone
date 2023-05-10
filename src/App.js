@@ -1,6 +1,7 @@
 import HeroSec from "./components/Pages/HeroSec/HeroSec";
 import "./styles.scss";
 import GoogleFontLoader from "react-google-font-loader";
+import logos from "./medias/brand-logos.svg"
 
 export default function App() {
 
@@ -15,14 +16,17 @@ export default function App() {
           },
           {
             font: "DM Sans",
-            weights: [300, 400, 500, 600,700],
+            weights: [100 , 200 ,300, 400, 500, 600,700],
           },
         ]}
         subsets={["cyrillic-ext", "greek"]}
       />
-      {/* <Navbar/> */}
       <HeroSec/>
-
+      <div className="brand_logo">
+        <img src={logos}></img>
+        <div className="matrix_left"></div>
+        <div className="matrix_right"></div>
+      </div>
     </div>
   );
 }

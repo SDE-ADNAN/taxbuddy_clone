@@ -85,12 +85,13 @@
           }
         }
         .pricing {
-          cursor: pointer;
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          color: white;
+            cursor: pointer;
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: white;
+            padding: 0 20px;
         }
       }
 
@@ -138,8 +139,9 @@
           font-family: "DM Sans";
           font-style: normal;
           font-weight: 700;
-          font-size: 56px;
+          font-size: 60px;
           color: white;
+          letter-spacing: -0.03em;
         }
         .des {
           margin-top: 18px;
@@ -148,7 +150,7 @@
           font-style: normal;
           font-weight: 400;
           font-size: 18px;
-          color: white;
+          color: #E7E7E7;
         }
         .input_div {
           margin-top: 40px;
