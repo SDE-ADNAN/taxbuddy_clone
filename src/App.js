@@ -1,3 +1,5 @@
+import HeroSec from "./components/Pages/HeroSec/HeroSec";
+import Navbar from "./components/Pages/Navbar";
 import "./styles.scss";
 import GoogleFontLoader from "react-google-font-loader";
 
@@ -15,6 +17,8 @@ export default function App() {
         ]}
         subsets={["cyrillic-ext", "greek"]}
       />
+      {/* <Navbar/> */}
+      <HeroSec/>
 
     </div>
   );
