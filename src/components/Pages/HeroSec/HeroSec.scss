@@ -41,15 +41,21 @@
     align-items: center;
     justify-content: center;
     .nav__main {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: white;
       width: 100%;
       max-width: 1029px;
-      background-color: rgba(114, 114, 114, 0.3);
+    //   background-color: rgba(114, 114, 114, 0.3);
       position: absolute;
       top: 0;
       margin-top: 40px;
       height: 40px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       img {
         width: 111px;
       }
@@ -86,8 +92,20 @@
         }
       }
 
-      .nav__log_sign{
-        
+      .nav__log_sign {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+
+        .sign {
+            width: 101px;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #03a3bd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
       }
     }
   }

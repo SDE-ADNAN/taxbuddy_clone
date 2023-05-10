@@ -21,7 +21,10 @@ const HeroSec = (props) => {
                             <img className="icon" src={Vector}></img></div>
                             <div className="pricing">Pricing</div>
                     </div>
-                    
+                    <div className="nav__log_sign">
+                        <div className="log">Log in</div>
+                        <div className="sign">Sign Up</div>
+                    </div>
                 </div>
             </div>
 
