@@ -26,6 +26,18 @@ const HeroSec = (props) => {
                         <div className="sign">Sign Up</div>
                     </div>
                 </div>
+                <div className="hero__content">
+                    <div className="left">
+                        <div className="aim"><span>Reduce</span> your taxes up to 26%</div>
+                        <div className="des">Sit back and relax. Let our experts help you save maximum time & taxes.</div>
+                        <div className="input_div">
+                            <input type="text" placeholder="Enter your mobile number"></input>
+                            <div className="submit">Submit</div>
+                        </div>
+                    </div>
+                    <div className="right"></div>
+
+                </div>
             </div>
 
         </div>

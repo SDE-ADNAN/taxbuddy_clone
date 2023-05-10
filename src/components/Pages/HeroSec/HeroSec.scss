@@ -1,4 +1,5 @@
 .hero__main {
+  font-family: "DM Sans";
   width: 100vw;
   height: 710px;
   background: #1b1b1b;
@@ -66,7 +67,7 @@
         column-gap: 25px;
 
         .services {
-            cursor:pointer;
+          cursor: pointer;
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -84,7 +85,7 @@
           }
         }
         .pricing {
-            cursor:pointer;
+          cursor: pointer;
           font-family: "DM Sans";
           font-style: normal;
           font-weight: 500;
@@ -98,19 +99,101 @@
         align-items: center;
         column-gap: 24px;
 
-        .log{
-            cursor:pointer;
+        .log {
+          cursor: pointer;
         }
 
         .sign {
-            cursor:pointer;
-            width: 101px;
-            height: 40px;
-            border-radius: 4px;
-            background-color: #03a3bd;
+          cursor: pointer;
+          width: 101px;
+          height: 40px;
+          border-radius: 4px;
+          background-color: #03a3bd;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .hero__content {
+      width: 100%;
+      max-width: 1029px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &>div{
+        width:50%;
+      }
+      .left {
+        max-width: 608px;
+        span {
+          background: #05ba46;
+          padding: 0 14px;
+        }
+        .aim {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 54px;
+          color: white;
+        }
+        .des {
+            margin-top:18px;
+          width: 503px;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: white;
+        }
+        .input_div {
+            margin-top: 40px;
+            display:flex;
+            gap:8px;
+          .submit {
             display: flex;
-            align-items: center;
+            flex-direction: row;
             justify-content: center;
+            align-items: center;
+            background: #03a3bd;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 14px;
+            color: white;
+            width: 97px;
+            height: 50px;
+            cursor:pointer;
+            opacity:0.8;
+
+            &:hover{
+                opacity:1
+            }
+          }
+          input {
+            width: 316px;
+            // height: 40px;
+            border-radius: 4px;
+            border: none;
+            padding: 15px;
+
+            &::placeholder {
+              font-family: "DM Sans";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              color: rgb(191, 191, 191);
+            }
+            &:focus {
+              border: none !important;
+              outline: none !important;
+            }
+            &:active {
+              border: none !important;
+              outline: none !important;
+            }
+          }
         }
       }
     }
