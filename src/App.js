@@ -14,6 +14,10 @@ export default function App() {
             font: "Signika",
             weights: [300, 400, 500, 600],
           },
+          {
+            font: "DM Sans",
+            weights: [300, 400, 500, 600],
+          },
         ]}
         subsets={["cyrillic-ext", "greek"]}
       />

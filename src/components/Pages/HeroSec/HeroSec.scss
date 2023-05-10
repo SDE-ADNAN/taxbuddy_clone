@@ -50,6 +50,45 @@
       height: 40px;
       display: flex;
       align-items: center;
+      img {
+        width: 111px;
+      }
+      .nav__ser_pri {
+        width: 190px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 25px;
+
+        .services {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 10px;
+
+          .text {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            color: white;
+          }
+          .icon {
+            width: 9.31px;
+          }
+        }
+        .pricing {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          color: white;
+        }
+      }
+
+      .nav__log_sign{
+        
+      }
     }
   }
 }

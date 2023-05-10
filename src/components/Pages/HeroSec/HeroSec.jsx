@@ -1,6 +1,7 @@
 import "./HeroSec.scss";
 import Lines from "../../../medias/lines.svg"
 import Logo from "../../../medias/logo.svg"
+import Vector from "../../../medias/Vector.svg"
 
 
 
@@ -15,6 +16,12 @@ const HeroSec = (props) => {
             <div className="content_main_div">
                 <div className="nav__main">
                     <img src={Logo}></img>
+                    <div className="nav__ser_pri">
+                        <div className="services"> <div className="text">Services</div>
+                            <img className="icon" src={Vector}></img></div>
+                            <div className="pricing">Pricing</div>
+                    </div>
+                    
                 </div>
             </div>
 
