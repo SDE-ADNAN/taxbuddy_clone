@@ -1,0 +1,27 @@
+.hero__main{
+  width:100vw;
+  height:710px;
+  background: #1B1B1B;
+  position:relative;
+  overflow: hidden !important;
+  .lines_img{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    img{
+        width:100%;
+        position:absolute;
+        bottom:0;  
+    }
+  }
+
+  .elipse{
+    position: relative;
+    width: 1662px;
+    height: 1662px;
+    left: 75px;
+    top: -106px;
+    background: radial-gradient(62.22% 62.22% at 76.52% 37.7%, #00A4BF 0%, rgba(0, 164, 191, 0) 100%);
+    opacity: 0.4;
+  }
+}
