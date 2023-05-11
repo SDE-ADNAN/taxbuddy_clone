@@ -9,6 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "compass-mixins": "0.12.12",
+    "framer-motion": "^10.12.10",
     "loader-utils": "3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

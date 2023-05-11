@@ -7,6 +7,7 @@ import image2 from "./medias/2.svg";
 import image3 from "./medias/3.svg";
 import StatsSec from "./components/Pages/StatsSec/StatsSec";
 import Money_Saved from "./components/UI_elements/Money_Saved/Money_Saved";
+import { motion } from "framer-motion";
 
 export default function App() {
   const BrandLogos = () => (
@@ -37,10 +38,33 @@ export default function App() {
       <div className="stats_save_container">
         <StatsSec />
         <Money_Saved />
-        <div className="images_container">
-          <img className="image1"  src={image1}/>
-          <img className="image3"  src={image3}/>
-          <img className="image2"  src={image2}/>
+        <div className="images_main_container">
+          <div className="images_container">
+            <motion.img
+              initial={{ opacity: 0, y: 300 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "normal", duration: 1 }}
+              viewport={{ once: false }}
+              className="image1"
+              src={image1}
+            />
+            <motion.img
+              initial={{ opacity: 0, y: 300 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "normal", duration: 1 }}
+              viewport={{ once: false }}
+              className="image3"
+              src={image3}
+            />
+            <motion.img
+              initial={{ opacity: 0, y: 300 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "normal", duration: 1}}
+              viewport={{ once: false }}
+              className="image2"
+              src={image2}
+            />
+          </div>
         </div>
       </div>
     </div>
