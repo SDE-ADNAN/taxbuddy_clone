@@ -39,8 +39,8 @@ export default function App() {
         <Money_Saved />
         <div className="images_container">
           <img className="image1"  src={image1}/>
-          <img className="image2"  src={image2}/>
           <img className="image3"  src={image3}/>
+          <img className="image2"  src={image2}/>
         </div>
       </div>
     </div>
