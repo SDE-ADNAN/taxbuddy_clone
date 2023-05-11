@@ -3,6 +3,7 @@ import people from "../../../medias/people_alt.svg"
 import tips from "../../../medias/tips_and_updates.svg"
 import bolt from "../../../medias/bolt.svg"
 import check from "../../../medias/check_filled.svg"
+import Button from "../../UI_elements/Button/Button"
 
 const statsData = [
     {
@@ -69,7 +70,7 @@ const StatsSec = (props) => {
                     <div className="points">
                         {pointsData.map((item, index) => <PointsItem item={item} key={index} />)}
                     </div>
-                    <div className=""></div>
+                    <Button name={"Get Started"}/>
                 </div>
             </div>
         </div>

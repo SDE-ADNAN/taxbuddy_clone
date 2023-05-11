@@ -33,3 +33,23 @@ body {
     position: absolute;
   }
 }
+
+.stats_save_container{
+  position:relative;
+
+  .images_container{
+    position: absolute;
+    top: 330px;
+    display: flex;
+    align-items: flex-start;
+    .img1{
+      position:relative
+    }
+    .img2{
+position:absolute
+    }
+    .img3{
+position:relative
+    }
+  }
+}

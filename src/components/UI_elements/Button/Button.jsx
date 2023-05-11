@@ -2,9 +2,7 @@ import "./Button.scss";
 
 const Button = (props)=>{
     return(
-        <div>
-
-        </div>
+        <div className={`sign ${ props.className ? props.className : ""}`}>{props.name}</div>
     )
 }
 

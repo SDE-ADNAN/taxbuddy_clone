@@ -4,6 +4,7 @@ import Logo from "../../../medias/logo.svg"
 import Vector from "../../../medias/Vector.svg"
 import HeroPerson from "../../../medias/heroPerson.svg"
 import HeroiPhone from "../../../medias/heroiPhone.svg"
+import Button from "../../UI_elements/Button/Button";
 
 
 
@@ -25,7 +26,7 @@ const HeroSec = (props) => {
                     </div>
                     <div className="nav__log_sign">
                         <div className="log">Log in</div>
-                        <div className="sign">Sign Up</div>
+                        <Button name={"Sign Up"}/>
                     </div>
                 </div>
                 <div className="hero__content">
