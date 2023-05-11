@@ -1,8 +1,10 @@
 .stats_main {
   width: 100%;
   display: flex;
-  justify-content: center;
   background: #e4dcf3;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   .stats_content {
     width: 1240px;
@@ -33,7 +35,7 @@
         }
       }
 
-      .title{
+      .title {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: 400;
@@ -51,6 +53,61 @@
         line-height: 130%;
         color: #5c5c5c;
         margin-top: 16px;
+      }
+    }
+    .divider_container {
+      width: 116px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .divider {
+        width: 0px;
+        height: 78px;
+        opacity: 0.3;
+        border: 1px solid #6d41be;
+      }
+    }
+  }
+
+  .content_cta_container {
+    width: 1240px;
+    margin-top: 138px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .right {
+      .head {
+        width: 526px;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: #1c1c1c;
+      }
+      .points {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:17.5px;
+        
+        .item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 4px;
+
+          .text {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 110%;
+            color: #263238;
+          }
+        }
       }
     }
   }
