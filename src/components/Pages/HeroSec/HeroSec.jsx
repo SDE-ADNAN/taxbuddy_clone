@@ -7,14 +7,21 @@ import HeroiPhone from "../../../medias/heroiPhone.svg";
 import Button from "../../UI_elements/Button/Button";
 import { motion } from "framer-motion";
 
-const HeroSec = (props) => {
+const HeroSec = () => {
     return (
-        <div className="hero__main">
+        <motion.div
+       
+        className="hero__main">
             <div className="lines_img">
                 <img src={Lines}></img>
             </div>
             <div className="elipse"></div>
-            <div className="content_main_div">
+            <motion.div
+             initial={{ opacity: 0}}
+             whileInView={{ opacity: 1}}
+             transition={{ type: "normal", duration: 2 }}
+             viewport={{ once: true }}
+            className="content_main_div">
                 <div className="nav__main">
                     <img src={Logo}></img>
                     <div className="nav__ser_pri">
@@ -49,7 +56,7 @@ const HeroSec = (props) => {
                             initial={{ opacity: 0, y: 300 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ type: "normal", duration: 1 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: false }}
                             className="person"
                         >
                             <img src={HeroPerson}></img>
@@ -58,14 +65,14 @@ const HeroSec = (props) => {
                         initial={{ opacity: 0, x: 300 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ type: "normal", duration: 1 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: false }}
                         className="Phone">
                             <img src={HeroiPhone}></img>
                         </motion.div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 };
 

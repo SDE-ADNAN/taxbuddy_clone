@@ -35,7 +35,12 @@ export default function App() {
       />
       <HeroSec />
       <BrandLogos />
-      <div className="stats_save_container">
+      <motion.div
+      initial={{ opacity: 0}}
+      whileInView={{ opacity: 1}}
+      transition={{ type: "normal", duration: 2 }}
+      viewport={{ once: false }}
+      className="stats_save_container">
         <StatsSec />
         <Money_Saved />
         <div className="images_main_container">
@@ -44,7 +49,7 @@ export default function App() {
               initial={{ opacity: 0, y: 300 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "normal", duration: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="image1"
               src={image1}
             />
@@ -52,7 +57,7 @@ export default function App() {
               initial={{ opacity: 0, y: 300 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "normal", duration: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="image3"
               src={image3}
             />
@@ -60,13 +65,13 @@ export default function App() {
               initial={{ opacity: 0, y: 300 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "normal", duration: 1}}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="image2"
               src={image2}
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

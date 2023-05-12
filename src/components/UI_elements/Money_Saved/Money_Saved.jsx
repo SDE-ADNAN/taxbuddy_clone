@@ -5,6 +5,7 @@ import P1 from "../../../medias/person1.svg";
 import P2 from "../../../medias/person2.svg";
 import P3 from "../../../medias/person3.svg";
 import Button from "../Button/Button";
+import { motion } from "framer-motion";
 
 const data = [
     { title: "Complete Tax Lifecycle Support", img: P1 },
@@ -12,21 +13,27 @@ const data = [
     { title: "Maximum Tax Saving Guarantee", img: P3 },
 ]
 
-const DataItem = (props)=>{
+const DataItem = ({key , item})=>{
     return(
-        <div className="item">
-            <img src={props.item.img}></img>
+        <motion.div 
+        initial={{ opacity: 0, x: 300 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        whileHover={{scale: 1.2}}
+        transition={{ type: "normal", duration: 1}}
+        viewport={{ once: false }}
+         className="item" key={key}>
+            <img src={item.img}></img>
             <div className="text_content">
-                <div className="head">{props.item.title}</div>
+                <div className="head">{item.title}</div>
                 <div className="text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore.
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
-const Money_Saved = (props) => {
+const Money_Saved = () => {
     return (
         <div className="ms_container">
             <div className="bg_container">
