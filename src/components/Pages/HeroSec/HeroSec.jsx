@@ -56,7 +56,7 @@ const HeroSec = () => {
                             initial={{ opacity: 0, y: 300 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ type: "normal", duration: 1 }}
-                            viewport={{ once: false }}
+                            viewport={{ once: true }}
                             className="person"
                         >
                             <img src={HeroPerson}></img>
@@ -65,7 +65,7 @@ const HeroSec = () => {
                         initial={{ opacity: 0, x: 300 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ type: "normal", duration: 1 }}
-                        viewport={{ once: false }}
+                        viewport={{ once: true }}
                         className="Phone">
                             <img src={HeroiPhone}></img>
                         </motion.div>

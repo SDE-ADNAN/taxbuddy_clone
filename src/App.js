@@ -39,7 +39,7 @@ export default function App() {
       initial={{ opacity: 0}}
       whileInView={{ opacity: 1}}
       transition={{ type: "normal", duration: 2 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className="stats_save_container">
         <StatsSec />
         <Money_Saved />
@@ -49,7 +49,7 @@ export default function App() {
               initial={{ opacity: 0, y: 300 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "normal", duration: 1 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="image1"
               src={image1}
             />
@@ -57,7 +57,7 @@ export default function App() {
               initial={{ opacity: 0, y: 300 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "normal", duration: 1 }}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="image3"
               src={image3}
             />
@@ -65,7 +65,7 @@ export default function App() {
               initial={{ opacity: 0, y: 300 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "normal", duration: 1}}
-              viewport={{ once: false }}
+              viewport={{ once: true }}
               className="image2"
               src={image2}
             />

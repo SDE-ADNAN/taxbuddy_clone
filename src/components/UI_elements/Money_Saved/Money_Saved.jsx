@@ -20,7 +20,7 @@ const DataItem = ({key , item})=>{
         whileInView={{ opacity: 1, x: 0 }}
         whileHover={{scale: 1.2}}
         transition={{ type: "normal", duration: 1}}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
          className="item" key={key}>
             <img src={item.img}></img>
             <div className="text_content">
