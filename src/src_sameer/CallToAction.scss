@@ -1,7 +1,15 @@
+.cta_main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FCFDFD;
+}
+
 .container_call_to_action {
     height: 555px;
     background-color: #FCFDFD;
     position: relative;
+    width: 1240px;
 
     .side_bar {
         position: absolute;

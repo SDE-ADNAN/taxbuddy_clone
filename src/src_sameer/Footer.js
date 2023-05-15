@@ -10,6 +10,7 @@ function Footer() {
   return (
 
     <div className='container_footer'>
+      <div className='content_container'>
       <div className='footer'>
         <div className='sec_1'>
           <img className='logo' src={logo} alt="logo" title="logo" />
@@ -56,6 +57,8 @@ function Footer() {
 
 
 
+      </div>
+      
       </div>
       <div className='copyright'>
         <div className='copyright_text'>Copyright © 2023 SSBA Innovations Ltd. All Rights Reserved.</div>
