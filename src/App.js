@@ -8,6 +8,7 @@ import image3 from "./medias/3.svg";
 import StatsSec from "./components/Pages/StatsSec/StatsSec";
 import Money_Saved from "./components/UI_elements/Money_Saved/Money_Saved";
 import { motion } from "framer-motion";
+import TaxbuddyServices from "./components/Pages/TaxbuddyServices/TaxbuddyServices";
 
 export default function App() {
   const BrandLogos = () => (
@@ -72,6 +73,7 @@ export default function App() {
           </div>
         </div>
       </motion.div>
+      <TaxbuddyServices/>
     </div>
   );
 }
