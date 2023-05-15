@@ -9,6 +9,9 @@ import StatsSec from "./components/Pages/StatsSec/StatsSec";
 import Money_Saved from "./components/UI_elements/Money_Saved/Money_Saved";
 import { motion } from "framer-motion";
 import TaxbuddyServices from "./components/Pages/TaxbuddyServices/TaxbuddyServices";
+import { Testimonial } from "./src_sameer/Testimonial";
+import { CallToAction } from "./src_sameer/CallToAction";
+import Footer from "./src_sameer/Footer";
 
 export default function App() {
   const BrandLogos = () => (
@@ -74,6 +77,9 @@ export default function App() {
         </div>
       </motion.div>
       <TaxbuddyServices/>
+      <Testimonial/>
+      <CallToAction />
+      <Footer />
     </div>
   );
 }
