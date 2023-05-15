@@ -4,11 +4,15 @@ import verified from "./Media/verified.png"
 import google from "./Media/Google.png"
 import rating_star from "./Media/rating_star.png"
 import rating_star_half from "./Media/rating_star_half.png"
+import { motion } from "framer-motion";
 
 export const ReviewCard = (props) => {
 
     return (
-            <div className='review_card'>
+            <motion.div initial={{ opacity: 0, y: 300 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "normal", duration: 1 }}
+            viewport={{ once: true }} className='review_card'>
                 <div className='user_details'>
                     <div className='user'>
                         <div><img className='profile_pic' src={props.pic} alt="user1" title="user1" /></div>
@@ -38,6 +42,6 @@ export const ReviewCard = (props) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
     )
 }

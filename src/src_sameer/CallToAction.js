@@ -1,6 +1,6 @@
 import React from "react";
 import "./CallToAction.scss";
-import lady from "./Media/lady.png";
+import lady from "./Media/lady.svg";
 import star from "./Media/star.png";
 import people from "./Media/people.png";
 import check from "./Media/check.png";
