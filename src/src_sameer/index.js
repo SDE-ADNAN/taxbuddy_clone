@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Footer from './Footer';
 import reportWebVitals from './reportWebVitals';
-import { CallToAction } from './CallToAction';
 import { Testimonial } from './Testimonial';
-import { ReviewCard } from './ReviewCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
