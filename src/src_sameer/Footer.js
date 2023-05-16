@@ -4,6 +4,25 @@ import facebook from "./Media/facebook.png"
 import linkedIn from "./Media/linkedIn.png"
 import twitter from "./Media/twitter.png"
 
+const dataset1 = [
+  "Partner",
+  "Income Tax Guide",
+  "F&O Trading",
+  "Terms & Conditions",
+  "Privacy Policy",
+  "FAQ's",
+  "Calculators",
+]
+const dataset2 = [
+  "Mobile: +91 93219 08755",
+  "Email: support@taxbuddy.com",
+  "Contact Us",
+  "Team",
+  "News",
+  "Blogs",
+  "Refund Status",
+]
+
 
 function Footer() {
 
@@ -21,13 +40,7 @@ function Footer() {
           <div className='sec_2_header'>Company</div>
           <div>
             <ul type='none'>
-              <li>Partner</li>
-              <li>Income Tax Guide</li>
-              <li>F&O Trading</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-              <li>FAQ's</li>
-              <li>Calculators</li>
+              {dataset1.map((item,index)=><li key={index}>{item}</li>)}
             </ul>
           </div>
         </div>
@@ -36,13 +49,7 @@ function Footer() {
           <div className='sec_3_header'>Contact Us</div>
           <div>
             <ul type='none'>
-              <li>Mobile: +91 93219 08755</li>
-              <li>Email: support@taxbuddy.com</li>
-              <li>Contact Us</li>
-              <li>Team</li>
-              <li>News</li>
-              <li>Blogs</li>
-              <li>Refund Status</li>
+            {dataset2.map((item,index)=><li key={index}>{item}</li>)}
             </ul>
           </div>
         </div>
