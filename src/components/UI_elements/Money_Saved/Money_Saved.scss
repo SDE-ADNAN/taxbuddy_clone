@@ -18,7 +18,7 @@
       .image {
         position: absolute;
         right: 0;
-        bottom: 0;
+        bottom: -5px;
       }
     }
     .right {
@@ -85,6 +85,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: center;
+        position:relative;
 
 
         .container {
@@ -92,6 +93,7 @@
             display: flex;
             flex-direction: column;
             row-gap: 62.5px;
+          position: absolute;
           .item {
             display: flex;
             flex-direction: row;
