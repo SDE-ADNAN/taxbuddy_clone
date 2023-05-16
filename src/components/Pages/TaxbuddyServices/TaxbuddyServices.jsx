@@ -5,6 +5,7 @@ import Button from '../../UI_elements/Button/Button'
 import S1 from "../../../medias/Screen1.svg"
 import S2 from "../../../medias/Screen2.svg"
 import S3 from "../../../medias/Screen3.svg"
+import { motion } from "framer-motion";
 
 const TaxbuddyServices = () => {
     return (
@@ -21,10 +22,25 @@ const TaxbuddyServices = () => {
                 <div className='right'>
                     <div className='content'>
                         <div className='two_images'>
-                            <img src={S1}></img>
-                            <img src={S3}></img>
+                            <motion.img
+                             initial={{ opacity: 0,x:-300}}
+                             whileInView={{ opacity: 1,x:0}}
+                             transition={{ type: "normal", duration: 2 }}
+                             viewport={{ once: true }}
+                            src={S1}></motion.img>
+                            <motion.img 
+                             initial={{ opacity: 0,x:300}}
+                             whileInView={{ opacity: 1,x:0}}
+                             transition={{ type: "normal", duration: 2 }}
+                             viewport={{ once: true }}
+                            src={S3}></motion.img>
                         </div>
-                        <img className='over_head_img' src={S2}></img>
+                        <motion.img 
+                         initial={{ opacity: 0,scale:0}}
+                         whileInView={{ opacity: 1,scale:1}}
+                         transition={{ type: "normal", duration: 1 }}
+                         viewport={{ once: true }}
+                        className='over_head_img' src={S2}></motion.img>
                     </div>
                 </div>
             </div>
